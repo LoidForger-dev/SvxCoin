@@ -163,30 +163,46 @@
       transform: translateY(0);
     }
 
+    /* Hero section: image above content, centered */
     .hero {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 3rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      text-align: center;
+      gap: 2rem;
     }
-    .hero-left {
-      flex: 1;
+    .hero-image {
+      max-width: 100%;
       text-align: center;
     }
-    .hero-left img {
-  max-width: 420px;
-  width: 100%;
-  filter: drop-shadow(0 0 25px rgba(160,160,255,0.6));
-  animation: float 4s ease-in-out infinite;
+    .hero-image img {
+      max-width: 500px;
+      width: 90%;
+      filter: drop-shadow(0 0 30px rgba(160,160,255,0.7));
+      animation: float 4s ease-in-out infinite;
+      display: inline-block;
     }
     @keyframes float {
       0% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
+      50% { transform: translateY(-15px); }
       100% { transform: translateY(0px); }
     }
-    .hero-right {
-      flex: 1;
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .hero-content h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff, #b0c4ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-content p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
     }
     .section-title {
       font-size: 2.5rem;
@@ -440,15 +456,15 @@
 </nav>
 
 <main>
-  <!-- HERO - full original text, coin image original style -->
+  <!-- HERO - image above content, enlarged and centered -->
   <div class="container fade-up" id="hero">
     <div class="hero">
-      <div class="hero-left">
-        <img src="svxcoin.png" alt="SVX Coin" onerror="this.src='https://placehold.co/280x280?text=SVX+COIN'">
+      <div class="hero-image">
+        <img src="svxcoin.png" alt="SVX Coin" onerror="this.src='https://placehold.co/500x500?text=SVX+COIN'">
       </div>
-      <div class="hero-right">
-        <h1 style="font-family: 'Orbitron'; font-size: 2.8rem; margin-bottom: 1rem;">Silver Man — Guardian of the Index</h1>
-        <p style="font-size:1rem; margin-bottom:0.8rem;"><em>In a market driven by hype and chaos, one figure chose a different path…</em></p>
+      <div class="hero-content">
+        <h1>Silver Man — Guardian of the Index</h1>
+        <p><em>In a market driven by hype and chaos, one figure chose a different path…</em></p>
         <p style="font-weight:600;">Silver Man. Forged from data and market cycles, he doesn’t chase pumps — he builds steady, calculated growth.</p>
         <p>While others panic, he stays balanced. While others gamble, he strategizes.</p>
         <p style="margin-top:1rem;">⚙️ His Mission: To bring stability into crypto through the Silver Index — a smarter way to grow, built on strength and consistency.</p>
