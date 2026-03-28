@@ -444,7 +444,7 @@
 <nav class="navbar">
   <div class="logo-area">
     <img src="svx.png" alt="Silver Man Logo" class="logo-img" onerror="this.src='https://placehold.co/44x44?text=SVX'">
-    <span> Silver Man</span>
+    <span>SVX Token</span>
   </div>
   <div class="nav-links">
     <a href="#standard">About</a>
@@ -545,17 +545,17 @@
     </div>
   </div>
 
-  <!-- Social Icons (X & Telegram) -->
+  <!-- Social Icons (X & Telegram) with live links -->
   <div id="community" class="container fade-up" style="text-align: center;">
     <h2 class="section-title">🌐 Join The Silver Legion</h2>
     <div class="social-row">
-      <a href="#" class="social-icon" id="xLink" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-icon" id="telegramLink" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://x.com/SIndex2503" class="social-icon" id="xLink" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/+Y1d8vmy-KmY1NWM0" class="social-icon" id="telegramLink" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
     </div>
-    <p style="margin-top: 0.5rem;">Links will be ready soon — stay tuned!</p>
+    <!-- no accompanying text -->
   </div>
   <footer>
-    <p>© 2026 Silver Man — Guardian of the Index. Built on strength & consistency.</p>
+    <p>© 2025 Silver Man — Guardian of the Index. Built on strength & consistency.</p>
     <p style="margin-top: 0.5rem;">⚙️ Silver Index Coin | The evolution of BBX</p>
   </footer>
 </main>
@@ -661,10 +661,7 @@
   // Contract copy alert
   document.getElementById('copyContractBtn').addEventListener('click', () => { alert('📜 Contract address is not yet deployed. It will be released soon — stay tuned!'); });
 
-  // Social placeholder alerts
-  document.getElementById('xLink').addEventListener('click', (e) => { e.preventDefault(); alert('🐦 X (Twitter) account coming soon — follow for updates!'); });
-  document.getElementById('telegramLink').addEventListener('click', (e) => { e.preventDefault(); alert('📱 Telegram community will be live soon.'); });
-
+  // Social links now have proper URLs, no placeholder alerts needed
   // Chatbot logic
   const chatbotToggle = document.getElementById('chatbotToggle');
   const chatWindow = document.getElementById('chatWindow');
